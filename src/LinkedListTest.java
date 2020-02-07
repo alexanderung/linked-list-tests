@@ -44,7 +44,7 @@ public class LinkedListTest {
         LinkedList<Integer> list1 = new LinkedList();
         list1.add(7);
         list1.add(2);
-        final int[] EXPECTED = new int[]{7, 2};
+        final Integer[] EXPECTED = new Integer[]{7, 2};
         assertArrayEquals(list1.toArray(),EXPECTED , "Expected array: [7, 2]");
     }
     @Test
@@ -64,7 +64,6 @@ public class LinkedListTest {
         assertEquals(list2.get(0), false, "Expected 0th element to be false");
         assertEquals(list2.get(1), true, "Expected 1st element to be true");
         assertEquals(list2.get(2), false, "Expected 2nd element to be false");
-
     }
 
     @Test
@@ -85,15 +84,6 @@ public class LinkedListTest {
     @Test
     void setTest() {
         LinkedList<Integer> list1 = new LinkedList();
-        list1.add(2);
-        list1.set(0, 8);
-        assertEquals(list1.get(0), 8, "Expected 0th element to be 8");
-        assertEquals(list1.get(1), 2, "Expected 1st element to be 2");
-    }
-
-    @Test
-    void setTest() {
-        LinkedList<Integer> list1 = new LinkedList();
         list1.add(3);
         list1.add(2);
         list1.set(0, 4);
@@ -102,7 +92,7 @@ public class LinkedListTest {
     }
 
     @Test
-    void addTest() {
+    void addIndexElementTest() {
         LinkedList<Integer> list1 = new LinkedList();
         list1.add(3);
         list1.add(2);
@@ -113,7 +103,7 @@ public class LinkedListTest {
     }
 
     @Test
-    void removeTest() {
+    void removeIndexTest() {
         LinkedList<Integer> list1 = new LinkedList();
         list1.add(3);
         list1.add(2);
@@ -136,18 +126,7 @@ public class LinkedListTest {
         list1.add(3);
         list1.add(3);
         list1.add(2);
-        assertEquals(list1.indexOf(3),2 , "Expected last index of 3 to be 2");
+        assertEquals(list1.lastIndexOf(3),2 , "Expected last index of 3 to be 2");
     }
-
-
-
-
-
-
-
-
-
-
-
 
 }
