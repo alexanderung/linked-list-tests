@@ -1,6 +1,16 @@
-# Default ignored files
-/.idea/workspace.xml
-
 # IntelliJ
 .idea/
-*.iml
+out/
+
+# Eclipse
+.metadata
+bin/
+tmp/
+*.tmp
+*.bak
+*.swp
+*~.nib
+local.properties
+.settings/
+.loadpath
+.recommenders
