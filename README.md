@@ -3,7 +3,7 @@
 Basic JUnit tests for COMP 390 A4. Add the `LinkedListTest.java` file to your project and you should be able to run the tests. Eclipse should be able to suggest the **JUnit5** library for you to add.
 
 ## Eclipse
-> If someone is interested in documenting the setup required for Eclipse fork and then make a pull request.
+[Setup in eclipse](https://www.youtube.com/watch?v=OyNGbqA9GRk&feature=youtu.be)
 
 ## IntelliJ
 
